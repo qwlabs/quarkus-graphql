@@ -1,10 +1,10 @@
 package com.qwlabs.quarkus;
 
-import org.jboss.logging.annotations.Message;
-import org.jboss.logging.annotations.MessageBundle;
 
+import io.quarkus.qute.i18n.Message;
+import io.quarkus.qute.i18n.MessageBundle;
 
-@MessageBundle(projectCode = "QWSEC")
+@MessageBundle
 public interface SecurityMessages {
 
     @Message(value = "User name not found")

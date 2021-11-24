@@ -24,7 +24,6 @@ test {
 }
 
 dependencies {
-    annotationProcessor("org.jboss.logging:jboss-logging-processor:${jbossLoggingProcessorVersion}")
     implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
     implementation "jakarta.validation:jakarta.validation-api"
     implementation "jakarta.enterprise:jakarta.enterprise.cdi-api"
