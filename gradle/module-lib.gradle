@@ -1,0 +1,4 @@
+apply plugin: 'java-library'
+apply plugin: 'org.kordamp.gradle.jandex'
+
+apply from: "${rootProject.rootDir}/gradle/module-common.gradle"

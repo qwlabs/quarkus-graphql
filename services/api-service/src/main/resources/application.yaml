@@ -1,0 +1,12 @@
+quarkus:
+  default-locale: zh-CN
+  locales: zh-CN
+  http:
+    root-path: /
+    non-application-root-path: q
+    cors: true
+    auth:
+      proactive: true
+      basic: true
+  smallrye-graphql:
+    root-path: graphql

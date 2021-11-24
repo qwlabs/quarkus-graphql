@@ -1,0 +1,7 @@
+apply from: "${rootProject.rootDir}/gradle/module-service.gradle"
+
+dependencies {
+    implementation project(":core:shared")
+    implementation project(":core:security")
+    implementation "io.quarkus:quarkus-smallrye-graphql"
+}

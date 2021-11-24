@@ -1,0 +1,5 @@
+apply from: "${rootProject.rootDir}/gradle/module-lib.gradle"
+
+dependencies {
+    implementation project(":core:shared")
+}

@@ -1,0 +1,3 @@
+apply plugin: 'io.quarkus'
+
+apply from: "${rootProject.rootDir}/gradle/module-common.gradle"

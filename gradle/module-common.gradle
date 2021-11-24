@@ -1,0 +1,38 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+compileJava {
+    options.encoding = 'UTF-8'
+    options.compilerArgs << '-parameters'
+}
+
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+test {
+    useJUnitPlatform()
+}
+
+dependencies {
+    annotationProcessor("org.jboss.logging:jboss-logging-processor:${jbossLoggingProcessorVersion}")
+    implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
+    implementation "jakarta.validation:jakarta.validation-api"
+    implementation "jakarta.enterprise:jakarta.enterprise.cdi-api"
+    implementation "org.slf4j:slf4j-api"
+    implementation "org.jboss.logmanager:log4j2-jboss-logmanager"
+    implementation "org.jboss.slf4j:slf4j-jboss-logmanager"
+
+    testImplementation 'io.quarkus:quarkus-junit5'
+    testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
+    testImplementation "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
+}

@@ -1,0 +1,7 @@
+apply from: "${rootProject.rootDir}/gradle/module-lib.gradle"
+
+
+dependencies {
+    implementation "io.quarkus:quarkus-qute"
+    implementation "io.quarkus:quarkus-security"
+}

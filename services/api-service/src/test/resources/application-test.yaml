@@ -1,0 +1,8 @@
+quarkus:
+  http:
+    test-port: 8080
+  flyway:
+    locations: db/migration
+  test:
+    continuous-testing: enabled
+
