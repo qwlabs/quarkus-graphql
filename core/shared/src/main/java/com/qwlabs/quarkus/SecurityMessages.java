@@ -8,5 +8,5 @@ import io.quarkus.qute.i18n.MessageBundle;
 public interface SecurityMessages {
 
     @Message(value = "User name not found")
-    RuntimeException usernameNotFound();
+    String usernameNotFound();
 }

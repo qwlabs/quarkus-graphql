@@ -14,6 +14,6 @@ public class IdentityService {
 
 
     public String login() {
-        throw securityMessages.usernameNotFound();
+        return securityMessages.usernameNotFound();
     }
 }
